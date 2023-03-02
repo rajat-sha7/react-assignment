@@ -1,0 +1,352 @@
+.product{
+    padding:70px;
+    display: flex;
+    gap: 50px;
+    
+}
+
+.product-left-section{
+     height: 100vh;
+     width: 60%;
+     background-color: #435c70;
+
+     
+     
+}
+
+.product-right-section{
+    height: 100vh;
+     width: 30%;
+     background-color: #435c70;
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+    .product{
+        padding:20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        margin-top: 100px;
+        
+    }
+    
+    .product-left-section{
+         height: auto;
+         width: 85%;
+         background-color: #435c70;
+    
+         
+         
+    }
+    
+    .product-right-section{
+        height: auto;
+         width: 60%;
+         background-color: #435c70;
+    }    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.productlist{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.product-table{
+    height: 70vh;
+    width: 100%;
+    background-color:  #50697f;
+    color: white;
+}
+
+
+.productcategorylist{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.productcategory-table{
+    height: 40vh;
+    width: 100%;
+    background-color:  #50697f;
+    color: white;
+}
+
+
+
+.productcategory-table::-webkit-scrollbar {
+    width: 12px;
+ 
+    background-color: #50697f;
+  }
+  
+  .productcategory-table::-webkit-scrollbar-thumb {
+    background-color: #486177;
+    border-radius: 10px;
+    width: 4px;
+  }
+
+
+.Product-button{
+    padding: 20px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    background-color: #f5a623;
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+
+}
+
+
+.Product-button:hover{
+ 
+
+    background-color: #435c70;
+    color:#f5a623;
+    border: 2PX solid #f5a623;
+   
+
+}
+
+.product-table{
+    width: 100%;
+    overflow: hidden;
+   
+    color:white;
+    width: 100%;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+.product-table::-webkit-scrollbar {
+    width: 12px;
+ 
+    background-color: #50697f;
+  }
+  
+  .product-table::-webkit-scrollbar-thumb {
+    background-color: #486177;
+    border-radius: 10px;
+    width: 4px;
+  }
+
+
+.product-table{
+    width: 100%;
+}
+
+
+
+.product-head{
+    background-color: #486177;
+    height: 80px;
+    width: auto;
+    border: none;
+   
+   
+}
+
+.product-head th{
+    width: 200px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.product-data{
+    background-color: #50697f;
+    height: 80px;
+    width: auto;
+    border: none;
+    border-bottom: 2px solid #486177;
+
+}
+
+.product-data td{
+    width: 200px;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+
+
+
+
+
+
+.productcategorylist{
+    color: white;
+}
+
+.productcategorylist h2{
+    padding: 50px;
+}
+
+.productcategory-table{
+    width: 100%;
+    overflow: hidden;
+   
+    color:white;
+    width: 100%;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+.category-list{
+
+    background-color: #50697f;
+    height: 100px;
+    width: auto;
+    border: none;
+
+    border-bottom: 2px solid #486177;
+
+
+}
+
+
+.category-list td{
+    width: 200px;
+    text-align: left;
+    padding-top: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.add-product-div{
+    height: auto;
+    width: 85vw;
+    background-color: #435c70;
+    margin:100px auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.add-product-div h1{
+    padding: 20px;
+
+}
+
+.bottom-section{
+    width: 100%;
+    padding: 30px;
+}
+
+
+.bottom-section button{
+    width: 100%;
+    padding: 30px;
+}
+
+
+.add-product{
+    height: auto;
+    width: 85vw;
+    background-color: #435c70;
+    margin:100px auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+   
+
+}
+
+.left-section{
+    padding: 50px;
+    width: 50%;
+
+    
+}
+
+.right-section{
+    padding: 50px;
+    width: 50%;
+    margin-top: 50px;
+
+    
+}
+
+
+.selectbox{
+    padding: 6px;
+    font-size: 20px;
+    gap:30px;
+}
+
+.bottom-inputs{
+    display: flex;
+    gap:50px;
+}
+
+.bottom-inputs-section{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width:100%
+}
+
+.pic-showbox{
+    height: 300px;
+    width: 100%;
+    background-color: gray;
+}

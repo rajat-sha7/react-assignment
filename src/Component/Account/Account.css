@@ -1,0 +1,234 @@
+.account-section{
+    margin:50px;
+    display:flex;
+    gap: 200px;
+    flex-direction: column;
+    width:93%;
+    height: auto;
+    /* background-color: gray; */
+    color:white;
+
+}
+
+.uper-section{
+    padding:50px;
+
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height: 300px;
+     background-color: #435c70;
+
+
+}
+.upper-inputsection{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form-input-box{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.bottom-section{
+    display: flex;
+    width:100% ;
+    gap: 50px;
+    height: auto;
+}
+
+
+.bottomleft-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    background-color: #435c70;
+    padding:100px 20px;
+    
+}
+
+.img-box{
+   
+    height:400px;
+    width: 100%;
+    background-color: gray;
+}
+
+
+.bottomright-section{
+    width: 70%;
+    background-color: #435c70;
+}
+
+
+
+
+
+
+
+.add-product-div{
+    height: auto;
+    width: 85vw;
+    background-color: #435c70;
+    margin:100px auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.add-product-div h1{
+    padding: 20px;
+
+}
+
+.bottom-section{
+    width: 100%;
+    padding: 30px;
+}
+
+
+.bottom-section button{
+    width: 100%;
+    padding: 30px;
+}
+
+
+
+
+@media only screen and (max-width:800px){
+    .account-section{
+      
+        gap: 120px;
+     
+        width:90%;
+        height: auto;
+    
+    }
+    
+    .uper-section{
+        width:90%;
+    }
+
+    .bottom-section{
+        display: flex;
+        flex-direction: column-reverse;
+        width:100% ;
+        gap: 50px;
+        height: auto;
+    }
+    
+    
+    .bottomleft-section{
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+       
+        
+    }
+
+    .bottomright-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+       
+        
+    }
+
+
+}
+
+
+
+
+
+
+
+.add-product-div{
+    height: auto;
+    width: 100%;
+    background-color: #435c70;
+    margin:auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.add-product-div h1{
+    padding: 20px;
+
+}
+
+.bottom-section{
+    width: 100%;
+    padding: 10px;
+}
+
+
+.bottom-section button{
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+.add-product{
+    height: auto;
+    width: 100%;
+    background-color: #435c70;
+    margin:auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+   
+
+}
+
+.left-section{
+    padding: 50px;
+    width: 50%;
+
+    
+}
+
+.right-section{
+    padding: 50px;
+    width: 50%;
+    margin-top: 0px;
+
+    
+}
+
+.bottom-ssection{
+    padding: 40px;
+}
+
+
+
+@media only screen and (max-width: 800px){
+
+
+
+}
+
+
+
