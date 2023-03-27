@@ -8,7 +8,8 @@ import "./Header.css";
 
 const Header = () => {
   const navigate = useNavigate()
-  //  const [data,setData]=useState([]);
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 
   useEffect(() => {
@@ -24,7 +25,7 @@ const Header = () => {
       localStorage.setItem("products", JSON.stringify(res.productsPage.products));
       localStorage.setItem("category", JSON.stringify(res.productsPage.categories)
       );
-      // setData(res)
+
 
     }
     fetchdata()
@@ -32,6 +33,11 @@ const Header = () => {
 
 
 
+  const handleClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+    console.log(" toggel btn clicked")
+
+  }
 
 
 
@@ -45,31 +51,31 @@ const Header = () => {
         <div className='left-side'>
           <h1>PRODUCT ADMIN </h1>
         </div>
-        <div className='right-side'>
+        <div id="togglemenu" className={isMenuOpen?'right-side' :'right-side active'}>
 
           <div onClick={() => { navigate('/dashboard') }} className='link-tab'>
             <div>  <i className="fas fa-tachometer-alt"></i> </div>
-            <div>Dashboard</div>
+            <div className="link-text">Dashboard</div>
 
           </div>
 
 
           <div className='link-tab'>
             <div>    <i className="fas fa-file-alt"></i></div>
-            <div>Reports</div>
+            <div className="link-text">Reports</div>
 
           </div>
 
 
           <div onClick={() => { navigate('/product') }} className='link-tab'>
             <div> <i className="fas fa-shopping-cart"></i></div>
-            <div>Products</div>
+            <div className="link-text">Products</div>
 
           </div>
 
           <div onClick={() => { navigate('/account') }} className='link-tab'>
             <div>   <i className="fas fa-user"></i></div>
-            <div>Accounts</div>
+            <div className="link-text">Accounts</div>
 
           </div>
 
@@ -77,67 +83,43 @@ const Header = () => {
 
           <div className='link-tab'>
             <div><i className="fas fa-cog"></i></div>
-            <div>Setting</div>
+            <div className="link-text">Setting</div>
 
           </div>
 
-
-
-
-
-        </div>
-
-
-
-
-
-
-        <div className='right-side2'>
-
-          <div onClick={() => { navigate('/dashboard') }} className='link-tab'>
-            <div>  <i className="fas fa-tachometer-alt"></i> </div>
-            <div>Dashboard</div>
-
-          </div>
-
-
-          <div className='link-tab'>
-            <div>    <i className="fas fa-file-alt"></i></div>
-            <div>Reports</div>
-
-          </div>
-
-
-          <div onClick={() => { navigate('/product') }} className='link-tab'>
-            <div> <i className="fas fa-shopping-cart"></i></div>
-            <div>Products</div>
-
-          </div>
-
-          <div onClick={() => { navigate('/account') }} className='link-tab'>
-            <div>   <i className="fas fa-user"></i></div>
-            <div>Accounts</div>
-
-          </div>
-
-          <div className='link-tab'>
-            <div><i className="fas fa-cog"></i></div>
-            <div>Setting</div>
-
-          </div>
-
-
-
-
-
-        </div>
-
+              
         
+         
+
+          
+          <div id="mobileLogout" className='link-tab'>
+            <div> <i  onClick={() => { navigate('/') }} class="fas fa-sign-out-alt"></i></div>
+          
+          </div>
+
+
+        </div>
+
+
+
+
+
+
+
 
 
         <h3 className="logobtn" onClick={() => { navigate('/') }} >ADMIN,LOGOUT</h3>
 
+       
+        {/* <button className="togglebtn" onClick={toggle}>MENU</button> */}
       </div>
+
+      <div id="mobile" onClick={handleClick} >
+
+        <i className={isMenuOpen ? "fas fa-times" : "fas fa-bars"}></i>
+
+      </div>
+
     </>
   )
 }
