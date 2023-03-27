@@ -9,6 +9,7 @@
     position: relative;
     box-shadow: rgb(255 255 255 / 10%) 0 1px 1px 1px;
 }
+
 .left-side{
     padding-left: 50px;
     font-size: 20px;
@@ -67,60 +68,92 @@
 .right-side2{
     display: none;
 }
-
-
-@media only screen and (max-width:1000px){
-   .header{
-    flex-direction: column;
-    height: auto;
-    margin-bottom: 100px;
-    justify-content: left;
-    /* position: relative; */
-
-   }
-
-   .left-side{
-   
-    width: 100%;
-    margin: 20px auto;
-
-    padding-left: 10%;
-    font-size: 7px;
-
-   }
-
-   .right-side{
-    width: 100%;
-    padding-left: 10%;
-    margin-bottom: 2%;
-  
-    
-   }
-
-
-   .link-tab{
-    width: 18%;
-    height: 15%;
-    font-size: 10px;
-    padding: 2px;
-   
+.togglebtn{
+    display: none;
 }
-.link-tab i{
+#mobile i{
+  color: #fff;
+  align-items: center;
+  
+}
+
+#mobile i{
+  color: #fff;
+  align-items: center;
+  position: absolute;
+  right: 40px;
+  top: 50px;
+  display: none;
+
+}
+
+#mobileLogout{
     display: none;
 }
 
 
+ @media  screen and (max-width:768px){ 
+   
+    .left-side{
+        padding-left: 30px;
+        font-size: 30px;
+        width: 80%;
+    }
+   
+    .left-side h1{
 
-.logobtn{
-   font-size: 18px;
-  padding-left: 70%;
-  position: absolute;
-  top:20%;
-  right: 5%;
+        font-size: 25px;
+        width: 100%;
+       
+    }
+    .right-side{
+        position: fixed;
+        flex-direction: column;
+        /* background-color: red; */
+        top: 100px;
+        right: 35px;
+        height: 300px;
+        transition: 0.4s ease-in-out;
+    }
+    .right-side.active{
+        right: -50px;
+    }
 
+
+
+   .link-text{
+    display: none;
+    width: 50%;
+   }
+   .link-tab{
+    width: 50px;
+    height: 130px;
+   
+   
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
 }
-
+#mobile i{
+    
+    display: block;
+  
+  }
 
   
-    
+#mobileLogout{
+    display: block;
+    padding-left: 10px;
 }
+.logobtn{
+    display: none;
+}
+
+    
+   
+
+   
+ } 
