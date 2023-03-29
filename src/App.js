@@ -8,7 +8,8 @@ import Product from "./Component/Product/Product";
 import Account from "./Component/Account/Account";
 import Header from "./Component/Header/Header";
 import Footer from "./Component/Footer/Footer";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 
 
@@ -16,6 +17,7 @@ import Footer from "./Component/Footer/Footer";
 
 
 function App() {
+
   return (
     <>
      <Header/>
@@ -32,11 +34,10 @@ function App() {
     </Routes>
     <Footer />
 
-      
-      
-
     </>
   );
 }
+
+
 
 export default App;

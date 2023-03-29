@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import "./Login.css"
 import { useNavigate } from "react-router-dom"
-// import Header from '../Header/Header';
+import { useDispatch } from 'react-redux';
+import { login } from '../../redux/action/action';
+
 
 
 
 const Login = () => {
 
     const navigate = useNavigate()
+
+    const dispatch = useDispatch();
 
 
   
@@ -35,8 +39,6 @@ const Login = () => {
         console.log(inputv)
 
 
-
-
         const { username, password } = inputv;
 
         if (username === "") {
@@ -50,9 +52,11 @@ const Login = () => {
 
         } else {
 
-            console.log("user login successfully")
-          
-            navigate("dashboard")
+           alert(`Login Successful ${username}`)
+              navigate("dashboard")
+              dispatch(login());
+              console.log("user login successfully")
+
         }
     }
 
@@ -73,7 +77,7 @@ const Login = () => {
 
     return (
         <>
-        {/* <Header/> */}
+       
             <div className='login-box'>
                 <h4>Welcome to Dashboard,Login</h4>
 

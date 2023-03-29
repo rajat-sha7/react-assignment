@@ -5,8 +5,8 @@
     justify-content: space-between;
     align-items: center;
     margin: 100px auto ;
-    padding-left: 50px;
-    padding-right: 50px; 
+    padding-left: 70px;
+    padding-right: 70px; 
     color: white;
    
 
@@ -113,8 +113,8 @@
         justify-content: space-between;
         align-items: left;
         margin: 100px auto ;
-        padding-left: 20px;
-        padding-right: 20px; 
+        padding-left: 10px; 
+         padding-right: 10px; 
         color: white;
         gap: 100px;
        
