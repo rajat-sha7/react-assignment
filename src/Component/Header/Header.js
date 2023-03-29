@@ -12,6 +12,7 @@ import { logout } from "../../redux/action/action";
 
 const Header = () => {
   const navigate = useNavigate()
+<<<<<<< HEAD
   
   const loggedIn = useSelector(state => state.loggedIn);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,6 +21,11 @@ const Header = () => {
   
   
   
+=======
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+>>>>>>> 6c95783f1abe39b0ca8f0948d6492a6c8be0508e
 
   useEffect(() => {
     const fetchdata = async () => {
@@ -43,6 +49,11 @@ const Header = () => {
 
     // let status= sessionStorage.getItem("status")
 
+  const handleClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+    console.log(" toggel btn clicked")
+
+  }
 
 
   const handleClick = () => {
@@ -113,9 +124,25 @@ const Header = () => {
 
           
           <div id="mobileLogout" className='link-tab'>
+<<<<<<< HEAD
             <div> <i  onClick={logoutfun} class="fas fa-sign-out-alt"></i></div>
           
           </div>
+=======
+            <div> <i  onClick={() => { navigate('/') }} class="fas fa-sign-out-alt"></i></div>
+          
+          </div>
+
+
+        </div>
+
+
+
+
+
+
+
+>>>>>>> 6c95783f1abe39b0ca8f0948d6492a6c8be0508e
 
 
         </div>
@@ -138,8 +165,19 @@ const Header = () => {
 
         <i className={isMenuOpen ? "fas fa-times" : "fas fa-bars"}></i>
 
+       
+        {/* <button className="togglebtn" onClick={toggle}>MENU</button> */}
       </div>
 
+<<<<<<< HEAD
+=======
+      <div id="mobile" onClick={handleClick} >
+
+        <i className={isMenuOpen ? "fas fa-times" : "fas fa-bars"}></i>
+
+      </div>
+
+>>>>>>> 6c95783f1abe39b0ca8f0948d6492a6c8be0508e
     </>
   )
 }
