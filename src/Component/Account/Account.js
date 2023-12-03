@@ -31,7 +31,7 @@ const Account = () => {
  
 
    
-    const [object,setObject] = useState({})
+    // const [object,setObject] = useState({})
 
 
     const [selectedValue, setSelectedValue] = useState('');
@@ -42,9 +42,9 @@ const Account = () => {
     const [phone,setPhone] =useState("")
     const [email,setEmail] =useState("")
     const [password2,setPassword2] =useState("")
-    const [accpic, setAccpic] = useState("");
+    // const [accpic, setAccpic] = useState("");
 
-    const [obj, setObj]= useState({})
+    // const [obj, setObj]= useState({})
 
 
     // const obj={accName , password,phone,email,password2}
